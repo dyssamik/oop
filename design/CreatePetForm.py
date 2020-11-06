@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'design.ui'
+# Form implementation generated from reading ui file 'CreatePetForm.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.1
 #
