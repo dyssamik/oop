@@ -29,6 +29,7 @@ class Ui_Form(object):
         self.label.setObjectName("label")
         self.verticalLayout.addWidget(self.label)
         self.label_2 = QtWidgets.QLabel(Form)
+        self.label_2.setAlignment(QtCore.Qt.AlignCenter)
         self.label_2.setObjectName("label_2")
         self.verticalLayout.addWidget(self.label_2)
         self.formLayout = QtWidgets.QFormLayout()
@@ -70,8 +71,8 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Просмотр питомца"))
-        self.label.setText(_translate("Form", "Имя персонажа"))
-        self.label_3.setText(_translate("Form", "Имя питомца"))
+        self.label.setText(_translate("Form", "Имя питомца"))
+        self.label_3.setText(_translate("Form", "Свободное поле"))
         self.label_4.setText(_translate("Form", "Возраст питомца"))
         self.label_5.setText(_translate("Form", "Вид"))
         self.pushButton.setText(_translate("Form", "Открыть файл"))

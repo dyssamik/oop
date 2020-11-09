@@ -1,7 +1,7 @@
 from PyQt5 import QtWidgets
 import sys
 
-from CreatePet import CreatePet
+from CreatePet import *
 
 def main():
     app = QtWidgets.QApplication(sys.argv)

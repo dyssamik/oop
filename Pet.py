@@ -1,17 +1,16 @@
-import json
-
 class Pet:
     def __init__(self, name="none", age=0, type="none"):
         self.name = name
         self.age = age
         self.type = type
 
-    def save_to_file(self):
-        data = {"name":self.name,"age":self.age,"type":self.type}
-        path_to_file = f"pets\{self.name}_pet.json"
-        file = open(path_to_file, "w+")
-        json.dump(data, file, ensure_ascii=False)
-        file.close()
-
-    def load_from_file(self):
-        pass
+    def process_pet_data(self, isCreating, petData="none"):
+        if isCreating == 1:
+            self.data = {"name":self.name,"age":self.age,"type":self.type}
+            self.path_to_file = f"pets\{self.name}_pet.json"
+        elif isCreating == 0:
+            self.name = petData["name"]
+            self.age = petData["age"]
+            self.type = petData["type"]
+        else:
+            pass
